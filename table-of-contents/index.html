@@ -86,7 +86,7 @@
       <article lang="en">
         <h1>Privacy Policy</h1>
         <p class="meta">
-          Effective October 10, 2026 · <a href="#zh">中文版本</a>
+          Effective October 26, 2026 · <a href="#zh">中文版本</a>
         </p>
 
         <p>
@@ -99,8 +99,9 @@
         <ul>
           <li>
             <strong>Page content.</strong> When you open the extension on a tab,
-            it reads that page's headings and text inside your browser to build
-            the outline and to search it.
+            or on a site where you asked it to open by itself, it reads that
+            page's headings and text inside your browser to build the outline
+            and to search it.
           </li>
           <li>
             <strong>Scroll position.</strong> While the panel is open, it reads
@@ -113,10 +114,11 @@
           </li>
           <li>
             <strong>Your settings.</strong> Interface language, theme, panel
-            background and opacity, indentation guides, reading progress, jump
-            offset, and the panel's layout (floating, docked or edge rail),
-            position and size are saved with <code>chrome.storage.local</code>
-            on your device.
+            background and opacity, text size, heading levels shown, indentation
+            guides, reading progress, jump offset, the panel's layout (floating,
+            docked or edge rail), position and size, and the list of sites where
+            you chose &ldquo;Always show on this site&rdquo; are saved with
+            <code>chrome.storage.local</code> on your device.
           </li>
         </ul>
         <p>
@@ -135,7 +137,8 @@
             advertising.
           </li>
           <li>
-            It does not run on any page until you open it on that tab, and it
+            It does not run on any page until you open it on that tab, or choose
+            that page's site with &ldquo;Always show on this site&rdquo;, and it
             never reads other tabs.
           </li>
           <li>It requires no account.</li>
@@ -154,6 +157,13 @@
           </li>
           <li>
             <code>storage</code> lets it keep your settings on your device.
+          </li>
+          <li>
+            Access to a site is requested only when you turn on &ldquo;Always
+            show on this site&rdquo; there (an optional host permission, which
+            Chrome asks you to allow). It lets the panel open by itself on that
+            site. Turning the option off gives the permission back, and you can
+            also revoke it on the extension's page in Chrome.
           </li>
         </ul>
 
@@ -180,7 +190,7 @@
 
       <article lang="zh-CN" id="zh">
         <h1>隐私政策</h1>
-        <p class="meta">生效日期：2026 年 10 月 10 日</p>
+        <p class="meta">生效日期：2026 年 10 月 26 日</p>
 
         <p>
           「网页文章目录」是一款浏览器扩展，用于为你正在浏览的网页文章生成目录。本政策说明它会处理哪些信息，以及它不会做什么。
@@ -190,7 +200,7 @@
         <ul>
           <li>
             <strong>网页内容。</strong
-            >当你在某个标签页中打开本扩展时，它会在你的浏览器内读取该页面的标题和文字，用来生成目录和搜索。
+            >当你在某个标签页中打开本扩展，或在你设为"在本站自动显示"的站点上浏览时，它会在你的浏览器内读取该页面的标题和文字，用来生成目录和搜索。
           </li>
           <li>
             <strong>滚动位置。</strong
@@ -202,7 +212,7 @@
           </li>
           <li>
             <strong>你的设置。</strong
-            >界面语言、主题、面板背景和透明度、缩进参考线、阅读进度开关、跳转留白，以及面板的布局（浮动、停靠或迷你导航条）、位置和大小，通过
+            >界面语言、主题、面板背景和透明度、字号、显示层级、缩进参考线、阅读进度开关、跳转留白、面板的布局（浮动、停靠或迷你导航条）、位置和大小，以及你设为"在本站自动显示"的站点列表，通过
             <code>chrome.storage.local</code> 保存在你的设备上。
           </li>
         </ul>
@@ -213,7 +223,7 @@
           <li>不收集、不传输、不出售、不分享任何个人信息或浏览数据。</li>
           <li>不发起任何网络请求，不包含任何统计、追踪或广告代码。</li>
           <li>
-            在你于某个标签页中打开它之前，它不会在该页面运行，也从不读取其他标签页。
+            在你于某个标签页中打开它、或把该站点设为"在本站自动显示"之前，它不会在该页面运行，也从不读取其他标签页。
           </li>
           <li>不需要注册账号。</li>
         </ul>
@@ -226,6 +236,12 @@
           </li>
           <li><code>scripting</code>：把扩展自带的目录面板添加到该标签页。</li>
           <li><code>storage</code>：把你的设置保存在你的设备上。</li>
+          <li>
+            站点访问权限：只在你于某个站点开启"在本站自动显示"时申请（可选的主机权限，由
+            Chrome
+            征求你的同意），用于让目录在该站点自动打开。关闭该选项会交还这项权限，你也可以在
+            Chrome 的扩展页面上撤销它。
+          </li>
         </ul>
 
         <h2>删除数据</h2>
